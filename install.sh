@@ -134,7 +134,7 @@ on_install() {
   # Extend/change the logic to whatever you want
   ui_print "- Extracting module files"
   unzip -o "$ZIPFILE" 'system/*' -d $MODPATH >&2
-  rm $MODPATH/etc/placeholder
+  rm $MODPATH/system/etc/security/cacerts/placeholder
 }
 
 # Only some special files require specific permissions
